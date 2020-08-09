@@ -90,9 +90,10 @@ public class TestUtil extends TestBase {
 	
 	
 	
-public static void select_frame (String frameID) {
-	
+public static void select_frame (String frameID) throws InterruptedException {
+	//this is new commit from akash
 		WebDriverWait wait= new WebDriverWait(driver, FRAME_LOAD_EXPLICITWAIT);
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.id(frameID)));
+		Thread.sleep(2000);
 	}
 }
