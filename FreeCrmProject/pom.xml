@@ -12,7 +12,14 @@
 				<version>3.6.0</version>
 				<configuration>
 
+					<suiteXmlFiles>
+						<suiteXmlFils>XMLfiles?${xmlFiles}</suiteXmlFils>
+					</suiteXmlFiles>
 
+					<systemPropertyVariables>
+						<executionBrowser>${browser}</executionBrowser>
+						<appURL>${urlToBeTested</appURL>
+					</systemPropertyVariables>
 
 
 					<goalPrefix>plugin</goalPrefix>
@@ -23,17 +30,17 @@
 					<fork>true</fork>
 
 					<executable>${JAVA_HOME}/bin/javac</executable>
-					
+
 					<executions>
-          <execution>
-            <id>auto-clean</id>
-            <phase>initialize</phase>
-            <goals>
-              <goal>clean</goal>
-            </goals>
-          </execution>
-        </executions>
-					
+						<execution>
+							<id>auto-clean</id>
+							<phase>initialize</phase>
+							<goals>
+								<goal>clean</goal>
+							</goals>
+						</execution>
+					</executions>
+
 
 				</configuration>
 
@@ -48,12 +55,12 @@
 
 
 
-	<groupId>MySeleniumClasses</groupId>
-	<artifactId>MySeleniumClasses</artifactId>
+	<groupId>FreeCrmProject</groupId>
+	<artifactId>FreeCrmProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>MySeleniumClasses</name>
+	<name>FreeCrmProject</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
