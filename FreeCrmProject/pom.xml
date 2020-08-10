@@ -18,7 +18,7 @@
 
 					<systemPropertyVariables>
 						<executionBrowser>${browser}</executionBrowser>
-						<appURL>${urlToBeTested</appURL>
+						<appURL>${urlToBeTested}</appURL>
 					</systemPropertyVariables>
 
 
